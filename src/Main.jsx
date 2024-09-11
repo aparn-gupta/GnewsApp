@@ -25,7 +25,7 @@ const [noNewsMessage, setNoNewsMessage] = useState("")
 
 
 
-const loader = loading ? <img src = "https://media1.tenor.com/images/a6a6686cbddb3e99a5f0b60a829effb3/tenor.gif?itemid=7427055" width={32} height={32} /> : ""
+const loader = loading ? <img src = "https://media1.tenor.com/images/a6a6686cbddb3e99a5f0b60a829effb3/tenor.gif?itemid=7427055" width={64} height={64} /> : ""
 
 
 
@@ -46,6 +46,9 @@ try {
     setLoading(false)
     if (newsArticles.length === 0) {
       setNoNewsMessage("No news articles found")
+    } else if (newsArticles.length > 0) {
+      setNoNewsMessage("")
+      console.log(newsArticles.length)
     }
   })
 }

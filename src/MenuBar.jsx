@@ -41,7 +41,7 @@ const handleInputChange = (e) => {
 
 
   return (
-    <div className=' container'>
+    <div className=' container mb-5'>
 
    <form onSubmit={handleSubmit} className='me-4 mb-5 mt-4'  >
    <input className='border border-1 me-4 py-3 ps-2' style={{width: "320px"}} type='text' name= "newsKeyword" value={searchKeyword} onChange={handleInputChange} placeholder='Search Acowale News'/>
